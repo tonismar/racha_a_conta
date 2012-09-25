@@ -46,6 +46,17 @@ public class InsereItem extends Activity {
     	
     	ArrayAdapter<String> cmpAdapter = new ArrayAdapter<String>(this,android.R.layout.select_dialog_item, NOMES);
     	nome.setAdapter(cmpAdapter);
+    	
+    	Button btnCancelar = (Button) findViewById(R.id.btnCancela);
+    	btnCancelar.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				nome.setText("");
+				valor.setText("");
+				spinner.setSelection(1);
+			}
+		});
     }
     
     public void finish() {    	
