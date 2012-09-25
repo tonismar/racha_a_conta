@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/txtItens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_itens"
+        android:textSize="14dp"/>
+    
+    <LinearLayout
+        android:id="@+id/lstItensMargem"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp" >
+    
+	    <ListView
+	        android:id="@+id/lstItens"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1" >	        
+	    </ListView>
+    
+    </LinearLayout>
+
+    <TextView 
+        android:id="@+id/txtSubTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/txt_subtotal"
+        android:textSize="14dp"/>
+    
+    <LinearLayout
+        android:id="@+id/lstSubTotalMargem"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp" >
+    
+	    <ListView
+	        android:id="@+id/lstSubTotal"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1" >
+	       
+	    </ListView>
+    
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"/>
+    
+    <RelativeLayout
+        android:id="@+id/botoes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnInserir"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btnLimpar"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/btn_inserir" />
+
+        <Button
+            android:id="@+id/btnLimpar"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/btn_limpar" />
+
+        <Button
+            android:id="@+id/btnDividir"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnLimpar"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/btn_dividir" />
+
+    </RelativeLayout>
+
+</LinearLayout>

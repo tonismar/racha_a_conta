@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">DWIII_PG1_TONISMAR_RACHAACONTA</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_racha_aconta">Racha A Conta</string>
+    <string name="btn_ci">Cálculo Individual</string>
+    <string name="btn_dt">Divisão Total</string>
+    <string name="title_activity_calculo_por_itens">Calculo Por Itens</string>
+    <string name="btn_inserir">Inserir</string>
+    <string name="btn_limpar">Limpar</string>
+    <string name="btn_dividir">Dividir</string>
+    <string name="btn_calcular">Calcular</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_itens">Por itens</string>
+    <string name="txt_itens">Itens</string>
+    <string name="txt_subtotal">Sub Total</string>
+    <string name="title_activity_insere_item">Insere Item</string>
+    <string name="txt_nome">Nome</string>
+    <string name="txt_item">Item</string>
+    <string name="txt_valor">Valor</string>
+    <string name="txt_total">Total da Conta</string>
+    <string name="txt_garcon">10% Garçom</string>
+    <string name="txt_nroparticipantes">Nro. de Participantes</string>
+    <string name="title_activity_calculo_por_divisao">CalculoPorDivisao</string>
+
+</resources>

@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<TextView 
+	    android:id="@+id/txtNome"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/txt_nome"
+	    android:textSize="24dp" />
+    
+    <!-- <AutoCompleteTextView
+        android:id="@+id/edtNome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" /> -->
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+    
+	<TextView 
+	    android:id="@+id/txtItem"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/txt_item"
+	    android:textSize="24dp" />
+    
+    <Spinner 
+        android:id="@+id/cmbItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    
+	<TextView 
+	    android:id="@+id/txtValor"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/txt_valor"
+	    android:textSize="24dp" />
+	
+	<EditText 
+	    android:id="@+id/edtValor"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:inputType="text"/>
+	
+	<RelativeLayout
+	    android:id="@+id/botoes"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+	    
+	    <Button 
+	        android:id="@+id/btnInsere"
+	        android:layout_width="160dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:text="@string/btn_inserir"/>
+	    
+	    <Button
+	        android:id="@+id/btnCancela"
+	        android:layout_width="160dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_toLeftOf="@+id/btnInsere"
+	        android:text="@string/btn_cancelar" />
+	    
+	</RelativeLayout>
+
+</LinearLayout>
