@@ -83,8 +83,8 @@ public class CalculoPorItens extends Activity {
     		itens.add(strItem[0]+" "+strItem[1]+" "+strItem[2]);
     		adapterItens.notifyDataSetChanged();
     		//Toast.makeText(this, data.getExtras().getString("returnKey1")  , Toast.LENGTH_LONG).show();
-    		float x = atualizaDivida(strItem[0], strItem[2]);
-    		
+    		atualizaDivida(strItem[0], strItem[2]);
+    		float x = atualizaTotalGeral();
     		x = (float) (x + (x * 0.1));
     		
     		TextView txtTotal = (TextView) findViewById(R.id.txtTotal);
@@ -94,7 +94,16 @@ public class CalculoPorItens extends Activity {
     	}
     }
     
-    public float atualizaDivida( String nome, String valor ){
+    public float atualizaTotalGeral(){
+    	float tot = 0;
+    	for(int i=0; i<subTotal.size(); i++){
+    		String [] lin = subTotal.get(i).split(" ", 2);
+    		tot = tot + Float.parseFloat(lin[1]);
+    	}
+		return tot;
+    }
+    
+    public void atualizaDivida( String nome, String valor ){
     	for(int i=0; i<subTotal.size(); i++){
     		String[] linha = subTotal.get(i).split(" ", 2);
     		//Toast.makeText(this, linha[0]+" "+linha[1], Toast.LENGTH_LONG).show();
@@ -103,12 +112,12 @@ public class CalculoPorItens extends Activity {
     			subTotal.set(i, nome+" "+total.toString());
     			//Toast.makeText(this, "ContŽm", Toast.LENGTH_LONG).show();
     			adapterSubTotal.notifyDataSetChanged();
-    			return total;
+    			return;
     		}
     	}
     	subTotal.add(nome +" "+ valor);
     	adapterSubTotal.notifyDataSetChanged();
-    	return  Float.parseFloat(valor);
+    	return;
     }
 
     @Override

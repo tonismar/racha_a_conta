@@ -11,16 +11,16 @@
 	    android:text="@string/txt_nome"
 	    android:textSize="24dp" />
     
-    <!-- <AutoCompleteTextView
+    <AutoCompleteTextView
         android:id="@+id/edtNome"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" /> -->
+        android:layout_height="wrap_content" />
 
-    <EditText
+    <!-- <EditText
         android:id="@+id/edtNome"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:inputType="text" />
+        android:inputType="text" /> -->
     
 	<TextView 
 	    android:id="@+id/txtItem"
