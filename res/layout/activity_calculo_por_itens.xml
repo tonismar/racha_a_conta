@@ -20,8 +20,11 @@
 	        android:id="@+id/lstItens"
 	        android:layout_width="0dp"
 	        android:layout_height="fill_parent"
-	        android:layout_weight="1" >	        
-	    </ListView>
+	        android:layout_weight="1"
+	        android:divider="@drawable/list_divider"
+	        android:dividerHeight="1dip"
+	        android:cacheColorHint="#FFFFFF"
+	        android:textSize="8dp" />
     
     </LinearLayout>
 
@@ -41,7 +44,11 @@
 	        android:id="@+id/lstSubTotal"
 	        android:layout_width="0dp"
 	        android:layout_height="fill_parent"
-	        android:layout_weight="1" >
+	        android:layout_weight="1"
+	        android:divider="@drawable/list_divider"
+	        android:dividerHeight="1dip"
+	        android:cacheColorHint="#FFFFFF"
+	        android:textSize="12dp" >
 	       
 	    </ListView>
     

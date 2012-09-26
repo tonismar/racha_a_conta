@@ -109,7 +109,8 @@ public class CalculoPorItens extends Activity {
     		//Toast.makeText(this, linha[0]+" "+linha[1], Toast.LENGTH_LONG).show();
     		if( linha[0].equals(nome) ){
     			Float total = Float.parseFloat(linha[1].replace(',', '.')) + Float.parseFloat(valor.replace(',', '.')); 
-    			subTotal.set(i, nome+" "+total.toString());
+    			//String str = String.format("%.2f", total);
+    			subTotal.set(i, nome+" "+ total.toString());
     			//Toast.makeText(this, "Contém", Toast.LENGTH_LONG).show();
     			adapterSubTotal.notifyDataSetChanged();
     			return;

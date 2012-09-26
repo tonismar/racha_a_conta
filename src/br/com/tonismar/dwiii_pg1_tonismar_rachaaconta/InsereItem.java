@@ -52,7 +52,10 @@ public class InsereItem extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				saveNome(readNome() + nome.getText().toString().trim());
+				String toFile = readNome();
+				if( !toFile.toLowerCase().contains(nome.getText().toString().toLowerCase()) ){
+					saveNome(readNome() + nome.getText().toString().trim());
+				}
 				finish();
 			}
 		});
