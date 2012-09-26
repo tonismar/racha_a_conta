@@ -11,11 +11,11 @@
         android:text="@string/txt_total"
         android:textSize="24dp"/>
     
-    <EditText 
+    <EditText
         android:id="@+id/edtTotal"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:inputType="text"/>
+        android:inputType="numberDecimal" />
 
     <TextView 
         android:id="@+id/txtNroParticipantes"

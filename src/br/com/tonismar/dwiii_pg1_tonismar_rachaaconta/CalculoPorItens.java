@@ -88,7 +88,7 @@ public class CalculoPorItens extends Activity {
     		x = (float) (x + (x * 0.1));
     		
     		TextView txtTotal = (TextView) findViewById(R.id.txtTotal);
-    		txtTotal.setText("Total geral: "+ String.format("%.5f",x));
+    		txtTotal.setText("Total geral: "+ String.format("%.2f",x));
     	} else {
     		Toast.makeText(this, "Valore inv‡lidos ou nulos", Toast.LENGTH_LONG).show();
     	}
